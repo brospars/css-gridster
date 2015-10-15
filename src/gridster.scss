@@ -1,0 +1,98 @@
+/* BREAKPOINTS */
+
+$small : 480px;
+$medium : 768px;
+$wide : 1080px;
+
+$max-width : 960px;
+$margin : 1%;
+
+$factor : ($margin/100%)*100;
+
+/* Calc row width including margin */
+@mixin columnWidth($row) {
+    width: ( (100-(24*$factor)) * ($row/12) + ($row*2-2)*$factor)*1%; 
+}
+
+.gridster-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.gridster-container:after {
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.gridster-col {
+    @include columnWidth(12);
+    
+    float: left;
+    margin:$margin;
+    box-sizing: border-box; 
+}
+
+/* For mobile devices */
+@media (min-width: 400px) {
+    .s1.gridster-col {
+        @include columnWidth(1);
+    }
+    .s2.gridster-col {
+        @include columnWidth(2);
+    }
+    .s3.gridster-col {
+        @include columnWidth(3);
+    }
+    .s4.gridster-col {
+        @include columnWidth(4);
+    }
+    .s5.gridster-col {
+        @include columnWidth(5);
+    }
+    .s6.gridster-col {
+        @include columnWidth(6);
+    }
+    .s7.gridster-col {
+        @include columnWidth(7);
+    }
+    .s8.gridster-col {
+        @include columnWidth(8);
+    }
+    .s9.gridster-col {
+        @include columnWidth(9);
+    }
+    .s10.gridster-col {
+        @include columnWidth(10);
+    }
+    .s11.gridster-col {
+        @include columnWidth(11);
+    }
+    .sfifth.gridster-col {
+        @include columnWidth(2.4);
+    }
+    .sthird.gridster-col {
+        @include columnWidth(4);
+    }
+    .stwo-third.gridster-col {
+        @include columnWidth(8);
+    }
+    .shalf.gridster-col {
+        @include columnWidth(6);
+    }
+}
+
+/* For tablet devices */
+@media (min-width: $medium) {
+
+}
+
+/* For desktop */
+@media (min-width: $wide) {
+
+}
+

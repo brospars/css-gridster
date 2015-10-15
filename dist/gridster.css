@@ -1,0 +1,56 @@
+/* BREAKPOINTS */
+/* Calc row width including margin */
+.gridster-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+.gridster-container:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.gridster-col {
+  width: 98%;
+  float: left;
+  margin: 1%;
+  box-sizing: border-box; }
+
+/* For mobile devices */
+@media (min-width: 400px) {
+  .s1.gridster-col {
+    width: 6.33333%; }
+  .s2.gridster-col {
+    width: 14.66667%; }
+  .s3.gridster-col {
+    width: 23%; }
+  .s4.gridster-col {
+    width: 31.33333%; }
+  .s5.gridster-col {
+    width: 39.66667%; }
+  .s6.gridster-col {
+    width: 48%; }
+  .s7.gridster-col {
+    width: 56.33333%; }
+  .s8.gridster-col {
+    width: 64.66667%; }
+  .s9.gridster-col {
+    width: 73%; }
+  .s10.gridster-col {
+    width: 81.33333%; }
+  .s11.gridster-col {
+    width: 89.66667%; }
+  .sfifth.gridster-col {
+    width: 18%; }
+  .sthird.gridster-col {
+    width: 31.33333%; }
+  .stwo-third.gridster-col {
+    width: 64.66667%; }
+  .shalf.gridster-col {
+    width: 48%; } }
+
+/* For tablet devices */
+/* For desktop */

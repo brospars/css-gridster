@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+}
+
+body{
+    font-family: 'Open sans', sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+    color:#333;
+    text-align: center;
+}
+
+section{
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+h1{ font-size: 2.5em; margin: 10px;}
+h2{ font-size: 2em; }
+h3{ font-size: 1.5em; }
+
+.fancy-title{
+    padding-top: 15%;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.button{
+    display: inline-block;
+    height: 38px;
+    padding: 0px 30px;
+    border-radius: 3px;
+    border: 1px solid #BBB;
+    line-height: 35px;
+    color: #777;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.button:hover{
+    color: #333;
+    border-color: #333;
+}
+
+.button.filled{
+    background:#FE585C;
+    color:white;
+    border-color: #FE585C;
+}
+
+.button.filled:hover{
+    background:#EE484C;
+    border-color: #EE484C;   
+}
+
+.value-proposition{
+    margin-top: 100px;   
+    margin-bottom: 50px;   
+}
+
+.value-proposition i{
+    display: block;
+    font-size: 3em;
+    margin:2rem;
+}
+
+.grid-example.gridster-container{
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.grid-example .gridster-col{
+    background: #f0f0f0;
+    min-height: 40px;
+    line-height: 40px;
+    border-radius: 1px;
+}
