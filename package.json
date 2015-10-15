@@ -1,0 +1,19 @@
+{
+  "name": "Gridster",
+  "version": "0.0.1",
+  "description": "A lightweight and mobile first css grid system",
+  "main": "dist/gridster.css",
+  "scripts": {
+  },
+  "keywords": [
+  ],
+  "author": "Benoit Rospars (@benuuts)",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "gulp-rename": "~1.2.2",
+    "gulp-sass": "~2.0.4",
+    "gulp-concat": "~2.6.0",
+    "gulp": "~3.9.0",
+    "gulp-plumber": "~1.0.1"
+  }
+}
