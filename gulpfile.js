@@ -13,7 +13,7 @@ gulp.task('css', function() {
 
 // CSS → Min CSS
 gulp.task('minify-css', function() {
-  return gulp.src('./dist/*.css')
+  return gulp.src('./dist/gridster.css')
     .pipe(minifyCss({compatibility: 'ie8'}))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dist/'));

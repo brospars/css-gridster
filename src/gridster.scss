@@ -2,7 +2,6 @@
 
 $small : 480px;
 $medium : 768px;
-$wide : 1080px;
 
 $max-width : 960px;
 $margin : 1%;
@@ -14,6 +13,12 @@ $factor : ($margin/100%)*100;
     width: ( (100-(24*$factor)) * ($row/12) + ($row*2-2)*$factor)*1%; 
 }
 
+.gridster-container:after {
+    content:'';
+    display:block;
+    clear: both;
+}
+
 .gridster-container {
     position: relative;
     display: block;
@@ -21,78 +26,161 @@ $factor : ($margin/100%)*100;
     max-width: $max-width;
     margin: 0 auto;
     box-sizing: border-box;
-}
 
-.gridster-container:after {
-    content:'';
-    display:block;
-    clear: both;
-}
+    .col {
+        @include columnWidth(12);
 
-.gridster-col {
-    @include columnWidth(12);
-    
-    float: left;
-    margin:$margin;
-    box-sizing: border-box; 
-}
+        float: left;
+        margin:$margin;
+        box-sizing: border-box; 
+    }
 
-/* For mobile devices */
-@media (min-width: 400px) {
-    .s1.gridster-col {
+
+    /* For small screens */
+
+    .s1.col {
         @include columnWidth(1);
     }
-    .s2.gridster-col {
+    .s2.col {
         @include columnWidth(2);
     }
-    .s3.gridster-col {
+    .s3.col {
         @include columnWidth(3);
     }
-    .s4.gridster-col {
+    .s4.col {
         @include columnWidth(4);
     }
-    .s5.gridster-col {
+    .s5.col {
         @include columnWidth(5);
     }
-    .s6.gridster-col {
+    .s6.col {
         @include columnWidth(6);
     }
-    .s7.gridster-col {
+    .s7.col {
         @include columnWidth(7);
     }
-    .s8.gridster-col {
+    .s8.col {
         @include columnWidth(8);
     }
-    .s9.gridster-col {
+    .s9.col {
         @include columnWidth(9);
     }
-    .s10.gridster-col {
+    .s10.col {
         @include columnWidth(10);
     }
-    .s11.gridster-col {
+    .s11.col {
         @include columnWidth(11);
     }
-    .sfifth.gridster-col {
+    .sfifth.col {
         @include columnWidth(2.4);
     }
-    .sthird.gridster-col {
+    .sthird.col {
         @include columnWidth(4);
     }
-    .stwo-third.gridster-col {
+    .stwo-third.col {
         @include columnWidth(8);
     }
-    .shalf.gridster-col {
+    .shalf.col {
         @include columnWidth(6);
     }
-}
 
-/* For tablet devices */
-@media (min-width: $medium) {
+    /* For tablet devices */
+    @media (min-width: $small) {
+        .m1.col {
+            @include columnWidth(1);
+        }
+        .m2.col {
+            @include columnWidth(2);
+        }
+        .m3.col {
+            @include columnWidth(3);
+        }
+        .m4.col {
+            @include columnWidth(4);
+        }
+        .m5.col {
+            @include columnWidth(5);
+        }
+        .m6.col {
+            @include columnWidth(6);
+        }
+        .m7.col {
+            @include columnWidth(7);
+        }
+        .m8.col {
+            @include columnWidth(8);
+        }
+        .m9.col {
+            @include columnWidth(9);
+        }
+        .m10.col {
+            @include columnWidth(10);
+        }
+        .m11.col {
+            @include columnWidth(11);
+        }
+        .mfifth.col {
+            @include columnWidth(2.4);
+        }
+        .mthird.col {
+            @include columnWidth(4);
+        }
+        .mtwo-third.col {
+            @include columnWidth(8);
+        }
+        .mhalf.col {
+            @include columnWidth(6);
+        }
+    }
 
-}
 
-/* For desktop */
-@media (min-width: $wide) {
+    @media (min-width: $medium) {
 
+        .w1.col {
+            @include columnWidth(1);
+        }
+        .w2.col {
+            @include columnWidth(2);
+        }
+        .w3.col {
+            @include columnWidth(3);
+        }
+        .w4.col {
+            @include columnWidth(4);
+        }
+        .w5.col {
+            @include columnWidth(5);
+        }
+        .w6.col {
+            @include columnWidth(6);
+        }
+        .w7.col {
+            @include columnWidth(7);
+        }
+        .w8.col {
+            @include columnWidth(8);
+        }
+        .w9.col {
+            @include columnWidth(9);
+        }
+        .w10.col {
+            @include columnWidth(10);
+        }
+        .w11.col {
+            @include columnWidth(11);
+        }
+        .wfifth.col {
+            @include columnWidth(2.4);
+        }
+        .wthird.col {
+            @include columnWidth(4);
+        }
+        .wtwo-third.col {
+            @include columnWidth(8);
+        }
+        .whalf.col {
+            @include columnWidth(6);
+        }
+    }
 }
 
