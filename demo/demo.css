@@ -30,6 +30,7 @@ h3{ font-size: 1.5em; }
 a{
     text-decoration: none;
     color:inherit;
+    transition: all .2s ease;
 }
 
 .button{
@@ -92,3 +93,30 @@ pre[class*="language-"]{
     font-weight: 100;
     font-size: 15px;
 }
+
+
+footer{
+    padding: 5em 0;
+    color:#bfbfbf;
+}
+
+
+
+footer a:hover{
+    text-decoration: none;
+    color:#FE585C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
