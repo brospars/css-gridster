@@ -13,13 +13,13 @@ $factor : ($margin/100%)*100;
     width: ( (100-(24*$factor)) * ($row/12) + ($row*2-2)*$factor)*1%; 
 }
 
-.gridster-container:after {
+.gridy-container:after {
     content:'';
     display:block;
     clear: both;
 }
 
-.gridster-container {
+.gridy-container {
     position: relative;
     display: block;
     width: 100%;
